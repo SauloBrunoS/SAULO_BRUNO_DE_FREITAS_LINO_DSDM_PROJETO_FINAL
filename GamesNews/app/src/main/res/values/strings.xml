@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GamesNews</string>
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Fechar menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="icone_da_fonte">Ícone da fonte</string>
+    <string name="fonte_da_historia">Fonte da História</string>
+    <string name="titulo_da_historia">Título da História</string>
+    <string name="favoritar_historia">Favoritar História</string>
+    <string name="nome_arquivo_preferencias_do_usuario">app_preferences</string>
+
+</resources>

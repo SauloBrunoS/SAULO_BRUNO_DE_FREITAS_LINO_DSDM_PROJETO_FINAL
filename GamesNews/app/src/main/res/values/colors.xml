@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="backgroundInputText">#E0E0E0</color>
+    <color name="corTexto">#003366</color>
+    <color name="corTextoMenu">#003366</color>
+    <color name="lavanda">#E6E6FA</color>
+    <color name="corTabLayout">#98FF98</color>
+    <color name="colorPrimary">#673AB7</color>
+</resources>

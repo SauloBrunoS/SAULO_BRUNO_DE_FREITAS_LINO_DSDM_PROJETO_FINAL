@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="corTexto">#FFFFFF</color>
+    <color name="corTextoMenu">#673AB7</color>
+    <color name="colorPrimary">#CCCCCC</color>
+    <color name="corTabLayout">#FFF</color>
+</resources>

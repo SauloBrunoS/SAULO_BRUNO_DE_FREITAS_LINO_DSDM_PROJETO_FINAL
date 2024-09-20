@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+app:cardElevation="4dp"
+app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Thumbnail da notícia -->
+        <ImageView
+            android:id="@+id/iv_news_thumbnail"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:contentDescription="Thumbnail da Notícia"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Título da notícia -->
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Titulo da Notícia"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_news_thumbnail" />
+
+        <!-- Nome e ícone da fonte -->
+        <ImageView
+            android:id="@+id/iv_source_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_news_title" />
+
+        <TextView
+            android:id="@+id/tv_source_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Nome da Fonte"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/iv_source_icon"
+            app:layout_constraintTop_toBottomOf="@id/tv_news_title" />
+
+        <!-- Data da notícia -->
+        <TextView
+            android:id="@+id/tv_news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Postado 2 horas atrás"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_source_name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_stories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_news_date" />
+
+        <ImageView
+            android:id="@+id/iv_favorite_star"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="264dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Favoritar Notícia"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toTopOf="@+id/rv_stories"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.187" />
+
+        <Button
+            android:id="@+id/btn_full_coverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:text="Coberta completa para essa história"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_stories" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

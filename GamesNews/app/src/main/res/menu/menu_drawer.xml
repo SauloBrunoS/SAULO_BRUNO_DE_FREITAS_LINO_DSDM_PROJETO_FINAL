@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Página Inicial"
+        />
+    <item
+        android:id="@+id/nav_populares"
+        android:icon="@drawable/icon_games"
+        android:title="Populares"
+       />
+    <item
+        android:id="@+id/nav_favoritos"
+        android:icon="@drawable/star_filled"
+        android:title="Meus Favoritos"
+        />
+
+    <item
+        android:id="@+id/nav_opcoes"
+        android:icon="@drawable/opcoes"
+        android:title="Opções"
+        />
+
+        <!-- Item de Logout -->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Sair" />
+
+</menu>

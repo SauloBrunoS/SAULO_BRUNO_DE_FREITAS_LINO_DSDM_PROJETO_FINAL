@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GamesNews" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:icon">@drawable/icon_app</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/corTexto</item> <!-- Action Bar background -->
+        <item name="colorPrimaryVariant">@android:color/white</item> <!-- Optional, for consistency -->
+        <item name="android:textColorPrimary">@android:color/white</item> <!-- Text color in Action Bar -->
+        <item name="android:autofilledHighlight">@android:color/transparent</item>
+
+    </style>
+
+    <style name="Theme.GamesNews" parent="Base.Theme.GamesNews" />
+</resources>
